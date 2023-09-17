@@ -1,6 +1,9 @@
 *{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+body{
+  background: #EDEDF1;
+}
 /* ---------chat------- */
 .chat-container {
   padding: 20px;
@@ -126,6 +129,19 @@ video {
   margin: 0 auto;
   max-width: 400px;
 }
+
+/* ----circlular-bar--- */
+.progress-ring {
+  transform: rotate(0deg);
+}
+
+.progress-ring-circle {
+  transition: stroke-dashoffset 0.35s;
+  transform-origin: center;
+}
+
+
+
 
 
 

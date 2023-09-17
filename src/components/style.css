@@ -1,0 +1,54 @@
+.flex{
+display:flex;
+}
+.align-center{
+    justify-content: center;
+    align-items: center;
+}
+
+.header-top-bar,.header-bottom-bar{
+    justify-content: space-between;
+    height: 30px;
+    padding: 8px;
+    background-color: white;
+    border-radius: 5px;
+    margin: 3px;
+    color: #B2B2B6;
+
+}
+
+.left-part-logo,.right-part-info{
+max-height: 100%;
+justify-content: space-evenly;
+gap:10px;
+}
+
+.right-part-info > img{
+ border-radius: 50%;
+}
+.right-part-info p{
+    font-size: 23px;
+ }
+
+ .header-bottom-bar{
+height: 18px;
+ }
+
+.name-left-info,.monitor-right-info{
+width: 20%;
+justify-content: space-between;
+}
+
+.name-left-info h4{
+    color: black;
+}
+
+.age-left-info{
+    justify-content: space-evenly;
+    gap: 6px;
+}
+
+.monitor-right-info{
+width: 25%;
+justify-content: space-between;
+}
