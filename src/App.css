@@ -109,5 +109,23 @@ video {
 .current-word,
 .previous-word{
   width: fit-content;
-  padding: 5px;
+  padding: 3px;
+  margin: 1px;
 }
+
+/*-------- questions------ */
+.text-transition-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.sentence {
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.5s ease-in-out;
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+
+
