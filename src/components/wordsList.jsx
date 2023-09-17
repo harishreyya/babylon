@@ -22,7 +22,6 @@ const WordList = () => {
 
   return (
     <div>
-      <h1>Symptom List</h1>
       <div className="symptom-container">
         <div
           className={`current-word zoom-effect`}

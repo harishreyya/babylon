@@ -40,6 +40,7 @@ const Chat = () => {
         >
           <span className="message-name">{message.name}: </span>
           <TypewriterText text={message.text} typingSpeed={40} />
+          <br />
         </div>
       ))}
     </div>

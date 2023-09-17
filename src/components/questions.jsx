@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-// import './TextTransition.css'; // Import the CSS file
 
 function TextTransition() {
   const sentences = [

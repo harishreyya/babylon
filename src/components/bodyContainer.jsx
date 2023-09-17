@@ -3,9 +3,11 @@ import Percentage from "./percentage.jsx";
 import WordList from "./wordsList.jsx";
 import TextTransition from "./questions";
 import CircularProgressBar from "./circlualrProgressbar.jsx";
+import Chat from "./chat.jsx";
 
 export const BodyContainer = ()=>{
     return <div className="container-body-wrapper">
+        {/* ----------left-part------ */}
           <div className="left-part-wrapper">
 <div className="medical-history-container">
     <p className="top-heading">Past Medical History</p>
@@ -126,8 +128,50 @@ export const BodyContainer = ()=>{
           </div>
           </div>
 
+
+{/* ----------right-part---------- */}
           <div className="right-part-wrapper">
-<WordList />
+
+            <div className="symptoms-block">
+          <p className="top-heading">Clinical Codes</p>
+          <div className="flex symptom-name-list">
+            <div>
+                <div className="headings">HPI</div>
+            <WordList />
+            </div>
+          <div className="clinical-code-symptoms">
+          <div className="headings">FamX</div>
+          <div className="previous-word">Migraine (GP)</div>
+          <div className="previous-word">Depression (GP)</div>
+          </div>
+          <div className="clinical-code-symptoms">
+          <div className="headings">SocHX</div>
+          <div className="previous-word">Non-Smoker (HC)</div>
+          <div className="previous-word">Low Alcohol Intake (HC)</div>
+          <div className="previous-word">Researcher (GP)</div>
+          </div>
+          <div className="clinical-code-symptoms">
+          <div className="headings">plan</div>
+          </div>
+          </div>
+          
+          </div>
+
+            <br />
+
+           <div className="chating-doctor-warapper">
+            <p className="top-heading">📞 GP to Patient auto-transcript</p>
+           <Chat />
+           </div>
+           
+           <div className="chating-doctor-warapper">
+            <p className="top-heading">Doctor Consulation notes</p>
+            <div className="doctor-note-empty">
+                <p>Examination Notes</p>
+            </div>
+           
+           </div>
+
           </div>
     </div>
 }
