@@ -1,0 +1,113 @@
+*{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* ---------chat------- */
+.chat-container {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow-y: auto;
+  font-family: Arial, sans-serif;
+  max-height: 300px;
+}
+
+.glow {
+  animation: glow 3s ease-in-out alternate;
+  color: #1063bb;
+  font-size: larger;
+}
+
+.message {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  animation: fadeIn 0.5s ease;
+}
+
+.typewriter-text{
+  color:#D9D8D9;
+}
+
+/* .user {
+   background-color: #007bff; 
+  color: white; 
+} */
+
+.bot {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.message-name {
+  margin-right: 5px;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px #A8C8E9, 0 0 20px #A8C8E9, 0 0 30px #A8C8E9;
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* -----------video call----------- */
+
+.container {
+  position: relative;
+  width: 200px; 
+  height: 400px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 42px;
+  right: 10px;
+  width: 116px;
+  height: 100px;
+}
+
+video {
+  width: 100%; 
+  height: 100%; 
+}
+/*----------- WordList ----------*/
+.symptom-container{
+  color: #8B8A8C;
+}
+.symptom-enter {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 500ms, transform 500ms;
+}
+
+.symptom-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.symptom-exit {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 500ms, transform 500ms;
+}
+
+.symptom-exit-active {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.current-word,
+.previous-word{
+  width: fit-content;
+  padding: 5px;
+}
