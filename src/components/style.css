@@ -52,3 +52,124 @@ justify-content: space-between;
 width: 25%;
 justify-content: space-between;
 }
+
+/* ---------body---------- */
+
+.container-body-wrapper{
+display: grid;
+grid-template-columns: 37% 22% 37%;
+gap:2%;
+padding: 10px;
+color: #B2B2B6;
+}
+
+.container-body-wrapper > div{
+/* height: 1000px; */
+border: 1px solid black;
+}
+
+/*--- left bar--- */
+.medical-history-container,.circular-progress-wrap,.questions-wrapper,.percentage-wrapper{
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 0px 0px 5px 0px;
+}
+
+.headings{
+    color: #7A7B80;
+    font-weight: bolder;
+    margin: 3px;
+    font-size: 13px;
+}
+
+.top-heading{
+    font-size: larger;
+    color: #58595C;
+    font-weight: bolder;
+    margin-left: -4px;
+    line-height: 0px;
+}
+
+.symptom-wrapper{
+width: 100%;
+justify-content: space-between;
+margin: 5px;
+
+}
+
+.symptom-words{
+    width: 50%;
+    text-align: center;
+}
+.symptom-words > div{
+    background-color: rgb(221, 235, 243);
+    padding: 3px;
+    margin: 1px;
+    display: inline-block;
+    font-size: 12px; 
+}
+.symptom-duration > div{
+    padding: 3px;
+    margin: 1px;
+    font-size: 12px;
+}
+.see-more{
+    text-align: right;
+    color: #58595C;;
+    font-size: 12px;
+
+}
+.circular-organ-wrap{
+    justify-content: space-between;
+}
+
+.circular-bar-wrap > div:first-child{
+    margin-left: 20px;
+}
+
+.over-all-health{
+    width: 100px;
+    font-size: 9px;
+    font-weight: bold;
+    text-align: center;
+}
+.percentage-words{
+    margin-top: -25px;
+    margin-left: 20px;
+}
+.skeleton-img-wrap > img {
+    width: 250px;
+    /* height: 300px; */
+    opacity: 0.3;
+}
+.organ-names-wrapper{
+    margin-left: -60px;
+    z-index: 1;
+}
+
+.green-tick{
+    color: #57BE5E;
+}
+.yellow-tick{
+    color: #E4B35D;
+}
+.blue-tick{
+color: #4B6CAC;
+}
+
+/* ------middlepart---- */
+.questions-wrapper{
+color: #58595C;
+}
+
+.percentage-disease-name{
+ color: #58595C;
+}
+
+.small-text{
+    font-size: 11px;
+}
+.bar-main{
+    border-radius: 4px;
+}

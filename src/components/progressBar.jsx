@@ -1,25 +1,25 @@
-// ProgressBar component
+
 export const ProgressBar=({ percentage }) =>{
     const progressBarStyle = {
       width: `${percentage}%`,
-      height: '8px',
-      backgroundColor: '#409EA1',
-      transition: 'width 1s ease', // CSS transition for animation
+      height: '6px',
+      backgroundColor: '#409B95',
+      transition: 'width 2s ease',
     };
   
     const progressWrapperStyle = {
       width: '100%',
-      height: '8px',
-      backgroundColor: '#E3E2E5',
+      height: '6px',
+      backgroundColor: '#C9C8C9',
       position: 'relative',
     };
 
     return (
-        <div>
-          <div style={progressWrapperStyle}>
-            <div style={progressBarStyle}></div>
+        <div className="percentage-bar-wrapper">
+          <div className="bar-main" style={progressWrapperStyle}>
+            <div className="bar-main" style={progressBarStyle}></div>
           </div>
-          <p>{percentage}%</p>
+          <div className="small-text">{percentage}% Likely</div>
         </div>
       );
     }

@@ -7,17 +7,19 @@ import TextTransition from "./components/questions.jsx";
 import Percentage from "./components/percentage.jsx";
 import CircularProgressBar from "./components/circlualrProgressbar.jsx";
 import { Header } from "./components/header.jsx";
+import { BodyContainer } from "./components/bodyContainer.jsx";
 
 function App() {
   return (
     <div className="App">
        <Header/>
-      <Chat />
+       <BodyContainer/>
+      {/* <Chat />
        <VideoCall/>
        <WordList />
        <TextTransition/>
        <Percentage/>
-        <CircularProgressBar percentage={75}/>
+        <CircularProgressBar percentage={75}/> */}
      
     </div>
   );

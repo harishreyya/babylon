@@ -21,7 +21,7 @@ function TextTransition() {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % sentences.length);
       setBackgroundColor('transparent');
-    }, 3000);
+    }, 2000);
 
     return () => {
       clearInterval(interval);
@@ -30,16 +30,14 @@ function TextTransition() {
 
   useEffect(() => {
     setCurrentSentence(sentences[currentIndex]);
-    setBackgroundColor('lightblue'); 
+    setBackgroundColor('#D0F2EB'); 
   }, [currentIndex]);
 
   return (
     <div className="text-transition-container">
-      <h1>Text Transition Example</h1>
       <p className="sentence" style={{ backgroundColor }}>{currentSentence}</p>
       <p className="sentence">Do you smoke, and if so, how much?</p>
       <p className="sentence">Do you consume alcohol or use recreational drugs?</p>
-      <p className="sentence">Have you experienced any recent stressors or major life changes?</p>
     </div>
   );
 }

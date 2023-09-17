@@ -6,20 +6,23 @@ function Percentage() {
 
     useEffect(() => {
       const interval = setInterval(() => {
-        // Generate random percentages for each bar
         const newPercentages = percentages.map(() => Math.floor(Math.random() * 100));
         setPercentages(newPercentages);
-      }, 2000); // Update percentages every 2 seconds
+      }, 3000); 
   
       return () => clearInterval(interval);
     }, [percentages]);
   
     return (
       <div>
-        <h1>Dynamic Progress Bars</h1>
         <div className="progress-container">
+          <div className="percentage-disease-name">Meniere's Disease</div>
           <ProgressBar percentage={percentages[0]} />
+          <br />
+          <div className="percentage-disease-name">Benign paroysmal Positional Vertigo</div>
           <ProgressBar percentage={percentages[1]} />
+          <br />
+          <div className="percentage-disease-name">Labyrinthiitis</div>
           <ProgressBar percentage={percentages[2]} />
         </div>
       </div>
