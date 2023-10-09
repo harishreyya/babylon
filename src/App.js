@@ -14,12 +14,8 @@ function App() {
     <div className="App">
        <Header/>
        <BodyContainer/>
-      {/* <Chat />
-       <VideoCall/>
-       <WordList />
-       <TextTransition/>
-       <Percentage/>
-        <CircularProgressBar percentage={75}/> */}
+       {/* -------- */}
+     
      
     </div>
   );
