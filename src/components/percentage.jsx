@@ -12,7 +12,7 @@ function Percentage() {
   
       return () => clearInterval(interval);
     }, [percentages]);
-  
+  // -------------------
     return (
       <div>
         <div className="progress-container">
