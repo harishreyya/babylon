@@ -2,8 +2,6 @@ import { useState, useEffect, useRef } from "react";
 import TypewriterText from "./TypewriterText";
 import { conversation } from "./conversation";
 
-///----------
-
 const Chat = () => {
   const [messages, setMessages] = useState([]);
   const [currentMessageIndex, setCurrentMessageIndex] = useState(0);

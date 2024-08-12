@@ -9,10 +9,10 @@ function Percentage() {
         const newPercentages = percentages.map(() => Math.floor(Math.random() * 100));
         setPercentages(newPercentages);
       }, 3000); 
-  
+
       return () => clearInterval(interval);
     }, [percentages]);
-  // -------------------
+ 
     return (
       <div>
         <div className="progress-container">
@@ -28,4 +28,5 @@ function Percentage() {
       </div>
     );
   }
+  
   export default Percentage;

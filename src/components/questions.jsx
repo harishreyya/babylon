@@ -11,8 +11,8 @@ function TextTransition() {
     "Have you taken any medications or treatments for your symptoms?",
     "Have you recently traveled to another region or country?",
   ];
-  // //--------
-
+  // /-----------
+ 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [currentSentence, setCurrentSentence] = useState(sentences[currentIndex]);
   const [backgroundColor, setBackgroundColor] = useState('transparent');
